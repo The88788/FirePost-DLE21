@@ -1,0 +1,1 @@
+<div class="profile-popup"><img src="{foto}" alt="" width="72" height="72" class="rounded-circle mb-3">[fullname]<h3 class="h5">{fullname}</h3>[/fullname]<p>{status}<br>Последняя активность: {lastdate}<br>Публикаций: {news-num}<br>Комментариев: {comm-num}</p>[news-num]<div>{news}</div>[/news-num][comm-num]<div>{comments}</div>[/comm-num]</div>
