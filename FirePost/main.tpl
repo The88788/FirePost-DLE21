@@ -5,6 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 {headers}
 
+<script>
+(() => {
+    let theme;
+    try {
+        theme = localStorage.getItem('firepost-theme');
+    } catch (_) {
+        // Storage may be blocked.
+    }
+    if (theme !== 'light' && theme !== 'dark') {
+        theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.dataset.theme = theme;
+})();
+</script>
+
 <link rel="icon" href="{THEME}/images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="{THEME}/css/bootstrap.min.css">
 <link rel="stylesheet" href="{THEME}/css/icofont.min.css">
@@ -74,7 +89,7 @@
   </div>
 </div>
 
-<script src="{THEME}/js/firepost.js?v=1.0.0" defer></script>
+<script src="{THEME}/js/firepost.js?v=1.0.1" defer></script>
 </body>
 </html>
 

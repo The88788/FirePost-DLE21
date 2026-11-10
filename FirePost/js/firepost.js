@@ -55,7 +55,7 @@
             themeButton.setAttribute('aria-label', dark ? 'Включить светлую тему' : 'Включить тёмную тему');
         }
     }
-    try { setTheme(localStorage.getItem('firepost-theme') === 'dark'); } catch (_) { setTheme(false); }
+    setTheme(root.dataset.theme === 'dark');
     new MutationObserver(records => {
         if (records.some(record => [...record.addedNodes].some(node => node.nodeType === 1 && (node.matches?.('iframe.tox-edit-area__iframe') || node.querySelector?.('iframe.tox-edit-area__iframe'))))) themeEditors();
     }).observe(document.body, {childList:true, subtree:true});
