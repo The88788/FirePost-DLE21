@@ -28,4 +28,4 @@ FirePost · адаптивный шаблон для блога, тематич�
 
 - Исходный дизайн · [DLE-THEME.RU](https://dle-theme.ru/).
 - Адаптация для DLE 21.0 · [The88788.com](https://the88788.com/).
-- VPS для сайта на DLE · [HIP.Hosting](https://hip.hosting/?code=1b890e361ec6ae343e57) (партнёрская ссылка).
+- VPS для сайта на DLE · [HIP.Hosting](https://hip.hosting/?code=1b890e361ec6ae343e57)
